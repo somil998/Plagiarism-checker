@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Python-3.6-blue.svg) ![](https://img.shields.io/badge/TensorFlow-1.15.2-blue.svg) ![](https://img.shields.io/badge/License-MIT-blue.svg)
 
-# Siamese Deep Neural Networks for semantic similarity.
+#  Plagiarism Checker Neural Networks for semantic similarity.
 This repository contains implementation of Siamese Neural Networks in Tensorflow built based on 3 different and major deep learning architectures:
 - Convolutional Neural Networks
 - Recurrent Neural Networks
 - Multihead Attention Networks
 
-The main reason of creating this repository is to compare well-known implementaions of Siamese Neural Networks available on GitHub mainly built upon CNN and RNN architectures with Siamese Neural Network built based on multihead attention mechanism originally proposed in Transformer model from [Attention is all you need](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) paper.
+The main reason of creating this repository is to compare well-known implementaions of Siamese Neural Networks available on GitHub mainly built upon CNN and RNN architectures with Siamese Neural Network built based on multihead attention mechanism originally proposed in Transformer model from  paper.
 
 # Supported datasets
 Current version of pipeline supports working with **3** datasets:
@@ -140,30 +140,24 @@ python3 gui_demo.py
 ```
 
 The below pictures presents Multihead Siamese Nets GUI for:
-1. Positive example:
+1. CNN example:
 
 <p align="center">
-  <img width="530" height="120" src="https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/positive_sample.png">
+  <img width="530" height="350" src="https://github.com/somil998/Plagiarism-checker/blob/master/pics/Cnn.png">
 </p>
 
-2. Negative example:
+2. RNN example:
 
 <p align="center">
-  <img width="530" height="120" src="https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/negative_sample.png">
+  <img width="530" height="350" src="https://github.com/somil998/Plagiarism-checker/blob/master/pics/Rnn.png">
 </p>
 
-# Attention weights visualization
-In order to visualize multihead attention weights for compared sentences use GUI demo - check 
-'Visualize attention weights' checkbox which is visible after choosing model based on multihead attention mechanism.
+2. MAN example:
 
-The example of attention weights visualization looks as follows (4 attention heads):
+<p align="center">
+  <img width="530" height="350" src="https://github.com/somil998/Plagiarism-checker/blob/master/pics/Multihead.png">
+</p>
 
-![](https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/attention1.png) 
-![](https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/attention2.png) 
-
-# Comparison of models
-
-Experiments performed on GPU **Nvidia GeForce GTX 1080Ti**.
 
 ## > SNLI dataset.
 
@@ -202,10 +196,6 @@ Multihead | 78.52 | 79.61 | 78.29 | 1 min 00.24s
 
 **Last-Dev-Acc: the development set accuaracy for the last epoch.
 
-Training curves (Accuracy & Loss): 
-![SNLI][results_snli]
-
-[results_snli]: https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/snli_train_curves.png "Evaluation results"
 
 ## > QQP dataset.
 
@@ -244,7 +234,3 @@ Multihead | 80.75 | 81.74 | 80.99 | 4 min 58.58s
 
 **Last-Dev-Acc: the development set accuracy for the last epoch.
 
-Training curves (Accuracy & Loss): 
-![QQP][qqp_results]
-
-[qqp_results]: https://github.com/tlatkowski/multihead-siamese-nets/blob/master/pics/qqp_train_curves.png "Evaluation results"
